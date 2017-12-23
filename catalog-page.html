@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Магазин</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="catalog-page">
+	<header class="main-header" id="main-header">
+		<div class="block-aligner flex-container">
+			<a class="logo-link" href="index.html"><img class="logo" src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс"></a>
+			<nav>
+				<ul>
+					<li>
+						<a href="">Студия</a>
+					</li>
+					<li>
+						<a href="">Клиенты</a>
+					</li>
+					<li class="current">
+						<span>Магазин</span>
+					</li>
+					<li>
+						<a href="">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<section class="cart">
+				<a href="">Корзина</a>
+			</section>
+		</div>
+		<section class="header block-aligner">
+			<h1>Магазин готовых шаблонов</h1>
+		</section>
+	</header>
+	<main class="block-aligner">
+		<section class="filter">
+			<form action="#" method="get">
+				<fieldset>
+					<legend>Стоимость:</legend>
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar" style="width: 70%"></div>
+							</div>
+							<div class="toggle min-toggle"></div>
+							<div class="toggle max-toggle"></div>
+						</div>
+						<div class="price-controls">
+							<label>
+								<span>От</span>
+								<input class="min-price" name="min-price" type="text" value="0">
+							</label>
+							<label>
+								<span>До</span>
+								<input class="max-price" name="max-price" type="text" value="15000">
+							</label>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="grid">
+					<legend>Сетка:</legend>
+					<label>
+						<input type="radio" name="grid" value="adaptive" checked>
+						<span><span class="indicator"></span>Адаптивная</span>
+					</label>
+					<label>
+						<input type="radio" name="grid" value="fix">
+						<span><span class="indicator"></span>Фиксированная</span>
+					</label>
+					<label>
+						<input type="radio" name="grid" value="responsive">
+						<span><span class="indicator"></span>Резиновая</span>
+					</label>
+				</fieldset>
+				<fieldset class="options">
+					<legend>Особенности:</legend>
+					<label>
+						<input type="checkbox" name="slider" checked>
+						<span><span class="indicator"></span>Слайдер</span>
+					</label>
+					<label>
+						<input type="checkbox" name="features-block">
+						<span><span class="indicator"></span>Блок преимуществ</span>
+					</label>
+					<label>
+						<input type="checkbox" name="news" checked>
+						<span><span class="indicator"></span>Новости</span>
+					</label>
+					<label>
+						<input type="checkbox" name="gallery">
+						<span><span class="indicator"></span>Галерея</span>
+					</label>
+					<label>
+						<input type="checkbox" name="cart">
+						<span><span class="indicator"></span>Корзина</span>
+					</label>
+				</fieldset>
+				<button class="btn" type="submit">Показать</button>
+			</form>
+		</section>
+		<section class="catalog">
+			<section class="sorting">
+				<b>Сортировать:</b>
+				<span class="active">По цене</span>
+				<a href="#">По типу</a>
+				<a href="#">По названию</a>
+				<span class="direct direct-start active">Отображать с начала</span>
+				<a class="direct direct-end" href="#">Отображать с конца</a>
+			</section>
+			<article class="catalog-item">
+				<img src="img/maket-sedona.jpg" width="360" height="616" alt="Макет">
+				<div>
+					<h2>Sedona</h2>
+					<p>Информационный сайт<br>для туристов.</p>
+					<a class="btn" href="#">9 900 руб.</a>
+				</div>
+			</article>
+			<article class="catalog-item">
+				<img src="img/maket-pink.jpg" width="360" height="616" alt="Макет">
+				<div>
+					<h2>Pink App</h2>
+					<p>Продуктовый лендинг<br>приложения для iOS и Android.</p>
+					<a class="btn" href="#">9 900 руб.</a>
+				</div>
+			</article>
+			<article class="catalog-item">
+				<img src="img/maket-borodinski.jpg" width="360" height="616" alt="Макет">
+				<div>
+					<h2>Barbershop</h2>
+					<p>Сайт салона красоты.<br>Для мужчин, да.</p>
+					<a class="btn" href="#">9 900 руб.</a>
+				</div>
+			</article>
+			<article class="catalog-item">
+				<img src="img/maket-mishka.jpg" width="360" height="616" alt="Макет">
+				<div>
+					<h2>MISHKA</h2>
+					<p>Интернет-магазин<br>вязаных игрушек.</p>
+					<a class="btn" href="#">9 900 руб.</a>
+				</div>
+			</article>
+			<article class="catalog-item">
+				<img src="img/maket-aplus.jpg" width="360" height="616" alt="Макет">
+				<div>
+					<h2>A Plus</h2>
+					<p>Лендинг курсов повышения<br>квалификации.</p>
+					<a class="btn" href="#">9 900 руб.</a>
+				</div>
+			</article>
+			<article class="catalog-item">
+				<img src="img/maket-kvast.jpg" width="360" height="616" alt="Макет">
+				<div>
+					<h2>КВАСТ</h2>
+					<p>Промо-сайт производителя<br>крафтового кваса.</p>
+					<a class="btn" href="#">9 900 руб.</a>
+				</div>
+			</article>
+			<div class="paginator">
+				<span class="btn btn-inactive btn-direction">Предыдущая</span>
+				<span class="btn btn-current">1</span>
+				<a class="btn" href="#">2</a>
+				<a class="btn" href="#">3</a>
+				<a class="btn btn-direction" href="#">Следующая</a>
+			</div>
+		</section>
+	</main>
+	<section class="find-us">
+		<div class="map">
+			<img src="img/map.jpg" width="1440" height="416" alt="Карта">
+		</div>
+		<div class="google-map pop-up-hidden">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894615867385!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494863374813" width="780" height="580" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<button class="close-btn" type="button" title="Закрыть"></button>
+		</div>
+		<div class="block-aligner">	
+			<div class="contacts">
+				<h2>NЁRDS DESIGN STUDIO</h2>
+				<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a class="btn" href="#">Напишите нам</a>
+			</div>
+			<div class="write-us pop-up-hidden">
+				<b>Напишите нам</b>
+				<button class="close-btn" type="button" title="Закрыть"></button>
+				<form action="#" method="post">
+					<label class="user-name">
+						<span>Ваше имя:</span>
+						<input class="field-style" name="user-name" type="text" placeholder="Представьтесь, пожалуйста" required>
+					</label>
+					<label class="user-mail">
+						<span>Ваш e-mail:</span>
+						<input class="field-style" name="user-mail" type="text"
+						placeholder="Для отправки ответа" required>
+					</label>
+					<label class="user-message">
+						<span>Текст письма:</span>
+						<textarea class="field-style" name="user-message" placeholder="В свободной форме" required></textarea>
+					</label>
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>	
+	</section>
+	<footer class="main-footer block-aligner">
+		<section class="social">
+			<a class="social-btn vk" href="#">Вконтакте</a>
+			<a class="social-btn fb" href="#">Фейсбук</a>
+			<a class="social-btn inst" href="#">Инстаграм</a>
+		</section>
+		<section class="discount">
+			<b>Давайте дружить, это выгодно!</b>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		</section>
+		<section class="copyright">
+			<span class="academy">Макет от <a href="https://htmlacademy.ru/">HTML Academy</a></span>
+			<span class="my-name">Сверстал <a href="https://vk.com/sfdsdjfksdgkjsdkgj">Артём</a></span>
+		</section>
+		<a class="up-btn" href="#main-header">Наверх</a>
+	</footer>
+	<div class="overlay pop-up-hidden"></div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+<html>
